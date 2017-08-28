@@ -1,0 +1,7 @@
+<div class="hotmenu">
+            <div class="con">热门标签：
+                {foreach $hotmenu as $h}
+                <a href='{:url("article/index",["tagname"=>$h.name]) }'>{$h.name}</a>
+               {/foreach}
+            </div>
+        </div>
